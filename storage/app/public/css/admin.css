@@ -1,0 +1,108 @@
+img {
+    height: 250px;
+    width: 250px;
+
+}
+.position {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    border:2px solid darkgrey;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.position-columns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+
+}
+.position-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*Картинка с кнопкой внутри*/
+.img-responsive {
+    position: relative;
+    width: 250px;
+    height: 250px;
+
+}
+
+.range-txt {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    color: #000;
+    font-size: 20px;
+    padding: 10px 10px 10px 16px;
+    text-align: center;
+}
+
+.position-rage-bottom {
+    padding-bottom: 20px;
+}
+
+.button {
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 100px;
+    background: rgba(0, 0, 0, .3);
+    left: calc(50% - 100px);
+    color:#fff;
+    transition: opacity .3s;
+}
+
+.img-responsive:hover .button {
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.img-container {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.img-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Service*/
+
+.position-column .service {
+    padding: 20px;
+    border: 1px solid black;
+}
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #868686;
+    background:url("/image/icons/profile.svg") ;
+    background-size: 100%;
+}
+.position-order {
+    padding: 30px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+ .hr-line {
+     margin: 20px 0;
+     padding: 0;
+     height: 0;
+     border: none;
+     border-top: 1px solid #333;
+ }
+
+ @media screen and (max-width: 900px){
+     .position-columns {
+         flex-direction: column;
+     }
+ }
