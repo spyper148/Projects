@@ -1,0 +1,264 @@
+a {
+    text-decoration: none;
+}
+.houses {
+    width: 100%;
+    height: 1040px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:1px solid #868686;
+    border-bottom:1px solid #868686;
+}
+.houses-block {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.houses-body {
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.house-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border: 3px solid #868686;
+    height: 710px;
+}
+.house-card-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 60%;
+}
+.house-card-second-column {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 35%;
+}
+.house-card-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: fit-content;
+    gap: 5%;
+}
+.house-card-main-img {
+    width: 70%;
+}
+.house-card-img {
+    width: 15%;
+}
+.house-card-mini-column {
+    display: flex;
+    flex-direction: column;
+}
+.house-btn {
+    border: 2px solid #868686;
+    color: #868686;
+    width: 100%;
+    height: 85px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.slide-button {
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    background-color: #88B274;
+    border: none;
+    border-radius: 50%;
+}
+.arrow-prev {
+    width: 30px;
+    height: 30px;
+}
+.arrow-next {
+    width: 30px;
+    height: 30px;
+    transform:scale(-1,1);
+}
+.carousel-control-prev-icon {
+    width: 50%;
+    height: 40px;
+}
+.modal-body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+.form-booking {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+.form-booking input {
+    border: 2px solid  #88B274;
+    height: 120px;
+    background: #FFF;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Gilroy Light", serif;
+    letter-spacing:2px ;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.modal-btn {
+    border: 2px solid #868686;
+    font-size: 24px;
+    color: #868686;
+    padding: 25px;
+    letter-spacing: 5.76px;
+}
+.house-position {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px #88B274 solid;
+}
+.house-desc {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+}
+.house-position input {
+    padding: 10px;
+    height: 40px;
+    width: 180px;
+}
+.form-house-img {
+    width: 160px;
+    height: 100px;
+}
+.services-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.service-position {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    border: #88B274 2px solid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+.form-service-img {
+    width: 100px;
+    height: 90px;
+}
+.service-position input {
+    width: 101px;
+    height: 30px;
+}
+.date-group {
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+}
+.date-group input {
+    width: 243px;
+    height: 43px;
+}
+
+@media screen and (max-width: 1630px){
+    .houses{
+        height: 1600px;
+    }
+    .house-card {
+        flex-direction: column;
+        height: 1400px;
+        justify-content: center;
+        gap: 20px;
+    }
+    .house-card-column {
+        width: 80%;
+    }
+    .house-card-second-column {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1230px){
+
+
+}
+@media screen and (max-width:825px ) {
+
+    .house-card-column {
+        width: 100%;
+    }
+    .houses{
+        height: 1200px;
+    }
+    .house-card {
+        height: 1000px;
+    }
+    .house-card .h2 {
+        font-size:24px ;
+    }
+    .house-card .p {
+        font-size:16px ;
+    }
+
+}
+@media screen and (max-width: 700px) {
+
+.house-card .house-btn {
+    height: 45px;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+    .houses-block {
+        width: 100%;
+    }
+    .houses-block {
+        align-items: center;
+    }
+    .house-position {
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+        !important;
+    }
+}
+@media screen and (max-width: 390px) {
+    .houses {
+        height: 1400px;
+
+    }
+    .house-desc {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .house-desc .h3 {
+        text-align: center;
+    }
+    .houses-body {
+        flex-direction: column;
+    }
+    .services-group {
+        flex-direction: column;
+    }
+}

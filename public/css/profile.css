@@ -1,0 +1,136 @@
+.profile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-top:1px solid #868686;
+    border-bottom:1px solid #868686;
+    padding:2% 0 2% 0;
+
+}
+.profile-block {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile-body {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    justify-content: center;
+    height: fit-content;
+}
+.profile-main-column {
+    display: flex;
+    flex-direction: column;
+    gap: 100px ;
+    width: 65%;
+    padding: 50px;
+    border: 3px solid #868686;
+}
+.profile-column {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 35%;
+    padding: 50px;
+    border: 3px solid #868686;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px;
+
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+.circle {
+    width: 273px;
+    height: 263px;
+    border-radius: 50%;
+    border: 1px solid #868686;
+    background:url("/image/icons/profile.svg") no-repeat;
+    background-size: 100%;
+}
+.profile-img {
+    border-radius: 50%;
+    height: 100%;
+}
+.profile-btn {
+    border: 2px solid #868686;
+    color: #868686;
+    width: 100%;
+    height: 85px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.profile-area {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-right: 10px;
+    border: none;
+    overflow-y: auto;
+    height: 440px;
+}
+.profile-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    border: 2px solid #868686;
+    padding: 30px;
+    height: fit-content;
+}
+@media screen and (max-width: 1630px) {
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 1230px) {
+    .profile-body {
+        flex-direction:column;
+    }
+    .profile-main-column {
+        width: 100%;
+    }
+    .profile-column {
+        width: 100%;
+    }
+}
+@media screen and (max-width:825px ) {
+.info {
+    flex-direction: column;
+}
+    .text {
+        text-align: center;
+    }
+    .profile-column .h2 {
+        font-size: 24px;
+    }
+    .profile-item .p {
+        font-size: 16px;
+    }
+    .profile-item .h3 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .buttons {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 390px) {
+    .profile-btn {
+        font-size: 16px;
+    }
+    .profile-column {
+        padding: 15px;
+    }
+
+}
